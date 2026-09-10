@@ -1,0 +1,1540 @@
+[
+  {
+    "n": 1,
+    "title": "Evaluate, then make a plan",
+    "subtitle": "Turn visible facts into a useful next move.",
+    "idea": "A positional plan connects a feature of the board to a change you want to achieve. First rule out immediate threats. Then compare material, king safety, pawn structure and piece activity. Choose the most important imbalance; do not try to improve everything at once.",
+    "white": "Kg1 Ra1 Rf1 Nc3 Pa2 Pb2 Pd4 Pe4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Ra8 Rf8 Nf6 Pa7 Pb7 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "line": "Rfd1 Rfd8 f3",
+    "facts": [
+      "Material is equal; both kings have a pawn shelter.",
+      "White has more central space, but d4 is attacked by e5.",
+      "The f1-rook can support d4 while the a1-rook stays flexible."
+    ],
+    "steps": [
+      [
+        "Rfd1",
+        "Support the point of contact before expanding. A rook belongs on a file where a future exchange may open lines."
+      ],
+      [
+        "...Rfd8",
+        "Black gives d6 extra support. Compare the jobs of the rooks rather than counting developed pieces."
+      ],
+      [
+        "f3",
+        "White reinforces e4. This is useful here, but it also commits a pawn and reduces the king's cover."
+      ]
+    ],
+    "counter": "Black should examine ...exd4, ...d5 and exchanges that reduce White's space. A plan must survive a central change; a quiet rook move is not a promise that the center will stay closed.",
+    "caution": "Do not call White winning because of space. The central pawns can become targets. If a forcing threat appears, calculation takes priority over this planning routine.",
+    "ew": "Kg1 Ra1 Rf1 Nc3 Pa2 Pb2 Pd4 Pe4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Ra8 Rf8 Nc6 Pa7 Pb7 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "eline": "Rfd1 Rfd8 d5",
+    "questions": [
+      "Name two facts that matter more than a general desire to attack.",
+      "Choose a useful rook move and explain the job it performs.",
+      "After the sample reply ...Rfd8, what changes if White plays d5?"
+    ],
+    "answers": [
+      "Material is level and the center is in contact: e5 attacks d4. White's space is meaningful, but the pawn base needs care. Neither king is under an immediate forcing attack in this reduced position.",
+      "Rfd1 adds support to d4 and anticipates an open d-file. Rad1 is also a legal candidate; choosing between rooks depends on which future files you expect to use. The exercise rewards a concrete reason, not a memorized rook rule.",
+      "d5 closes the d-file and attacks Nc6. The knight must find another square. White gains space but gives up the possibility of exchanging the d-pawn on e5. Reassess piece routes after changing the structure."
+    ],
+    "change": "Suppose Black can open the center with tempo against your king. Does a slow improvement still come first?",
+    "changed_answer": "No. Evaluate the forcing line before spending a tempo. A correct strategic diagnosis does not make a tactically unsafe move playable.",
+    "rules": [
+      "Threats first; plans second.",
+      "State a fact, its consequence and a move.",
+      "Reassess after every pawn exchange."
+    ],
+    "drill": "In three of your own games, stop at move 15. Write one sentence beginning: Because ___, I want ___, so I will consider ___.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d4",
+      "e4",
+      "d6"
+    ],
+    "emarks": [],
+    "links": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "n": 2,
+    "title": "Improve your worst piece",
+    "subtitle": "Give every piece a destination and a job.",
+    "idea": "A piece is badly placed when it cannot contribute to the current struggle. Count useful squares and tasks, not how far it has moved. A quiet maneuver is justified when its destination improves pressure, defense or coordination faster than the opponent can create trouble.",
+    "white": "Kg1 Rc1 Nf1 Pa2 Pb2 Pd4 Pe4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rc8 Nf6 Pa7 Pb7 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "line": "Ne3 g6 Nd5",
+    "facts": [
+      "Nf1 has few active targets.",
+      "d5 cannot be attacked by a black c- or e-pawn.",
+      "Ne3 connects the knight to d5 while also covering c4 and f5."
+    ],
+    "steps": [
+      [
+        "Ne3",
+        "Choose the destination before choosing the route. From e3 the knight can jump into d5 without moving a pawn."
+      ],
+      [
+        "...g6",
+        "This illustrative reply does not contest d5. In a real game, also consider Black's exchanges and central captures."
+      ],
+      [
+        "Nd5",
+        "The knight attacks c7, e7, c3, e3, b4, b6, f4 and f6. Its occupation is useful because it influences play, not just because d5 is central."
+      ]
+    ],
+    "counter": "Black may exchange the knight with ...Nxd5. After exd5, White must judge the resulting pawn structure and rook activity. A maneuver can provoke a favorable transformation even when the knight does not remain.",
+    "caution": "Do not spend several tempi improving one piece while another is hanging. A beautiful square that can be challenged by a pawn may only be a temporary stop.",
+    "ew": "Kg1 Rc1 Nh2 Pa2 Pb2 Pd4 Pe4 Pf2 Pg2 Ph3",
+    "eb": "Kg8 Rc8 Nf6 Pa7 Pb7 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "eline": "Ng4 Nxg4 hxg4",
+    "questions": [
+      "Which white piece is least connected to the center?",
+      "What is the purpose of Ng4 even if Black exchanges it?",
+      "Name the structural cost of the sample exchange."
+    ],
+    "answers": [
+      "Nh2 has little influence on the central battle. Rc1 already uses a file; the knight is the piece whose activity is easiest to improve. The safe route must still be checked square by square.",
+      "Ng4 offers to trade a passive knight for Black's active Nf6. After ...Nxg4 hxg4, the knights disappear. This illustrates improvement by exchange rather than by keeping a piece on its ideal square.",
+      "White receives pawns on g2 and g4, and the h-file opens. Those changes affect king safety and rook play. The exchange is a candidate to evaluate, not an automatic strategic gain."
+    ],
+    "change": "If Black still had a pawn on h5, how would your view of Ng4 change?",
+    "changed_answer": "A black h5-pawn attacks g4. The proposed square would be unsafe unless a concrete tactic justified placing a knight there.",
+    "rules": [
+      "Name the piece's future task.",
+      "Calculate the route, including exchanges.",
+      "A useful trade can improve the whole army."
+    ],
+    "drill": "Choose a quiet position. Give each of your pieces a one-word job. Spend your analysis on the piece with no useful job.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "f1",
+      "e3",
+      "d5"
+    ],
+    "emarks": [],
+    "links": [
+      7,
+      8,
+      10
+    ]
+  },
+  {
+    "n": 3,
+    "title": "Read the center",
+    "subtitle": "The center tells you how much time you have.",
+    "idea": "An open center favors rapid activity and king safety. A locked center often allows slower maneuvers and play on a flank. A mobile center can advance or be attacked. These are descriptions of current possibilities, not permanent labels: one pawn exchange can change the right plan.",
+    "white": "Kg1 Ra1 Rf1 Nf3 Pa2 Pb2 Pc3 Pd4 Pe5 Pf2 Pg2 Ph2",
+    "black": "Kg8 Ra8 Rf8 Nf6 Pa7 Pb7 Pc7 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "line": "exf6 gxf6",
+    "facts": [
+      "d4 and d5 lock one central file.",
+      "e5 attacks Nf6 right now: a tactical fact comes first.",
+      "Capturing on f6 changes structure and material; the center label alone cannot decide a move."
+    ],
+    "steps": [
+      [
+        "exf6",
+        "The pawn captures an attacked knight. Do not ignore available material just because you planned a quiet maneuver."
+      ],
+      [
+        "...gxf6",
+        "Black recaptures, creating doubled f-pawns and opening the g-file. White has traded a pawn for a knight."
+      ],
+      [
+        "Reassess",
+        "The d-file remains locked, but king safety and material have changed. The next plan should protect the extra piece and meet rook activity."
+      ]
+    ],
+    "counter": "With a locked center Black may seek ...c5, attacking d4. The newly opened g-file may also give the rook a useful route. Being structurally worse does not mean having no active resources.",
+    "caution": "This first diagram deliberately includes an immediate capture. A positional concept never excuses overlooking a hanging piece. Also, a closed center can open quickly if a pawn break is ready.",
+    "ew": "Kg1 Ra1 Rf1 Nf3 Pa2 Pb2 Pc3 Pd4 Pe5 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Ra8 Rf8 Nd7 Pa7 Pb7 Pc7 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "eline": "Rfe1 c5",
+    "questions": [
+      "Describe the central locks and White's space.",
+      "Why is ...c5 a logical black break?",
+      "After ...c5, what must White compare before choosing a flank move?"
+    ],
+    "answers": [
+      "White's d4-pawn is blocked by d5 and e5 is blocked by e6. White has more kingside space. Nf3 is safe, while Black's knight is on d7 rather than the attacked f6-square from the model.",
+      "...c5 attacks d4, the base supporting e5. Capturing or exchanging that base can reduce White's space and open the c- or d-file. A flank pawn can therefore change a central structure.",
+      "Compare maintaining the tension, capturing on c5 and allowing ...cxd4. Check who recaptures and whether e5 remains secure. Rfe1 was a useful developing move, but it does not remove the need to answer the new contact."
+    ],
+    "change": "If both pairs of central pawns disappeared, would the same slow flank maneuver remain attractive?",
+    "changed_answer": "It might lose time. With open central files, rook activity and king exposure become more urgent. Count tempi again rather than carrying over the old plan.",
+    "rules": [
+      "Describe the actual pawn contacts.",
+      "Identify the break that changes the center.",
+      "Check forcing moves before classifying."
+    ],
+    "drill": "Label five positions open, locked or mobile. For each, name one legal pawn exchange that would change the label.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d4",
+      "d5",
+      "e5",
+      "e6"
+    ],
+    "emarks": [],
+    "links": [
+      4,
+      5,
+      14
+    ]
+  },
+  {
+    "n": 4,
+    "title": "Space and restriction",
+    "subtitle": "Use extra room without overextending.",
+    "idea": "Space gives your pieces more useful routes and reduces the opponent's options. Its value depends on whether your pawns can be maintained. The player with less space often seeks exchanges or a freeing pawn break; the player with more space should improve coordination before adding new weaknesses.",
+    "white": "Kg1 Rc1 Nc3 Pa2 Pb2 Pc4 Pd5 Pe4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rc8 Nd7 Pa7 Pb7 Pc7 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "line": "b4 a6 a4",
+    "facts": [
+      "c4-d5-e4 gives White a broad central grip.",
+      "Black's d6/e5 pawns limit the routes of Nd7.",
+      "b4 and a4 can support queenside expansion without changing the central lock."
+    ],
+    "steps": [
+      [
+        "b4",
+        "Gain queenside space and prepare a supported advance. The b-pawn is safe here because the c4-pawn blocks the rook's line to c3."
+      ],
+      [
+        "...a6",
+        "Black prepares to contest b5. A space advantage creates a struggle over entry squares, not free movement."
+      ],
+      [
+        "a4",
+        "White supports b5 with another pawn. Before advancing, calculate ...axb5 and watch the separate central challenge ...c6."
+      ]
+    ],
+    "counter": "Black can look for ...c6 to challenge d5, or ...f5 to challenge e4. Trading a pair of pieces can also reduce congestion. White should not make several flank moves without watching these breaks.",
+    "caution": "Keeping pieces is a tendency, not a commandment. Exchange a dangerous enemy piece or accept a favorable endgame even when you have more space.",
+    "ew": "Kg1 Rc1 Nc3 Pa2 Pb2 Pc4 Pd5 Pe4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rc8 Nd7 Pa7 Pb7 Pc6 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "eline": "dxc6 Rxc6",
+    "questions": [
+      "What changed when Black's c-pawn reached c6?",
+      "What does dxc6 give up as well as gain?",
+      "After ...Rxc6, which black piece has improved?"
+    ],
+    "answers": [
+      "Black now attacks d5 directly. White can no longer treat the space advantage as a stable background feature. The center must be calculated before another queenside pawn move.",
+      "dxc6 removes Black's c-pawn but gives up the advanced d5-pawn and releases the central cramp. It also opens a line for the enemy rook. Exchanging tension changes who benefits from the structure.",
+      "The c8-rook becomes active on c6. White should compare this result with maintaining tension or supporting d5; counting only the pawns exchanged misses the main positional change."
+    ],
+    "change": "Would exchanging the only black active piece necessarily help the cramped defender?",
+    "changed_answer": "No. Exchanges help a cramped side only if the resulting activity and structure improve. Removing its sole active defender can instead strengthen your grip.",
+    "rules": [
+      "Maintain the pawn chain behind your space.",
+      "Watch the opponent's freeing break.",
+      "Judge exchanges by the resulting position."
+    ],
+    "drill": "Play the exercise position for ten moves from both sides. White tries to maintain d5; Black tries to achieve an active central exchange.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "c4",
+      "d5",
+      "e4"
+    ],
+    "emarks": [],
+    "links": [
+      5,
+      10,
+      20
+    ]
+  },
+  {
+    "n": 5,
+    "title": "Pawn breaks",
+    "subtitle": "Prepare the move that changes the position.",
+    "idea": "A pawn break creates contact with enemy pawns so that files, diagonals or squares can open. Its purpose is the resulting position, not the pawn push itself. Work backward: name the line you want to open, identify the relevant pawn contact, and prepare the pieces that will use it.",
+    "white": "Kg1 Rc1 Nf3 Pa2 Pb2 Pc3 Pd4 Pe5 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rc8 Nd7 Pa7 Pb7 Pc7 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "line": "c5 dxc5 Nxc5",
+    "facts": [
+      "White's e5-pawn is supported by d4.",
+      "The black c7-pawn can challenge that base with ...c5.",
+      "Nd7 can recapture on c5 after dxc5."
+    ],
+    "steps": [
+      [
+        "...c5",
+        "Attack the base of White's central chain. The move asks White to choose a structural response."
+      ],
+      [
+        "dxc5",
+        "This illustrative capture removes White's d4-pawn. Other replies must also be considered; the capture is not forced."
+      ],
+      [
+        "...Nxc5",
+        "Black develops the knight by recapturing and reduces White's central support. The break has improved a piece, not merely exchanged pawns."
+      ]
+    ],
+    "counter": "White can maintain the tension and add support to d4. Black must calculate d5-related tactics and ensure that opening the c-file will not favor White's rook more.",
+    "caution": "An unprepared break can create a weak pawn or open a line for the opponent. Count attackers and recaptures, and inspect all checks and intermediate moves in the resulting position.",
+    "ew": "Kg1 Re1 Nf3 Pa2 Pb2 Pc3 Pd4 Pe5 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rf8 Nd7 Pa7 Pb7 Pc7 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "eline": "f6 exf6 Nxf6",
+    "questions": [
+      "Which break attacks the head of White's chain?",
+      "What piece gains activity after the sample exchange?",
+      "What new risk has Black accepted by moving the f-pawn?"
+    ],
+    "answers": [
+      "...f6 attacks e5, the chain's advanced pawn. It is a different method from ...c5 against d4. Both breaks aim to reduce White's central grip, but they open different files and diagonals.",
+      "After exf6 ...Nxf6, the d7-knight reaches f6 and White's e5-pawn disappears. Black has converted a pawn exchange into development and access to e4 and g4.",
+      "The f-pawn has left the king shelter. In this queenless example the risk is limited, but in a fuller middlegame checks, sacrifices and an opened f-file could make the same break unsafe."
+    ],
+    "change": "If the knight could not recapture on f6, what would you calculate next?",
+    "changed_answer": "Check the other legal recaptures and the cost of each. A break justified by a favorable knight recapture may fail when only a weakening pawn recapture is available.",
+    "rules": [
+      "Name the target pawn.",
+      "Prepare the recapture and the open line.",
+      "Judge the position after the exchanges."
+    ],
+    "drill": "In your next analysis, find both sides' main pawn break before suggesting a piece move. Write the intended recapture beside each break.",
+    "turn": "b",
+    "eturn": "b",
+    "marks": [
+      "c7",
+      "c5",
+      "d4"
+    ],
+    "emarks": [],
+    "links": [
+      3,
+      6,
+      14
+    ]
+  },
+  {
+    "n": 6,
+    "title": "Pawn tension and timing",
+    "subtitle": "Keep useful choices; release tension for a reason.",
+    "idea": "Pawn tension exists when opposing pawns can capture each other. Keeping it preserves choices and may restrict the opponent. Releasing it can win time, create a target or open a useful line. Compare capture, advance and maintain; choose according to the resulting piece activity and pawn structure.",
+    "white": "Kg1 Rc1 Nf3 Pa2 Pb2 Pc4 Pd4 Pe3 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rc8 Nf6 Pa7 Pb7 Pc6 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "line": "cxd5 exd5",
+    "facts": [
+      "White's c4-pawn and Black's d5-pawn are in contact.",
+      "Black can recapture with the e6-pawn.",
+      "The exchange opens the c-file only as far as Black's c6-pawn."
+    ],
+    "steps": [
+      [
+        "cxd5",
+        "White commits to a structure. The move is useful only if the new targets or piece routes are worth giving up the tension."
+      ],
+      [
+        "...exd5",
+        "Black keeps a pawn on d5 and creates the c6-d5 chain. White now has a semi-open c-file against c6."
+      ],
+      [
+        "New plan",
+        "Prepare pressure on c6 or a queenside minority attack. Black gets access to the semi-open e-file and central activity."
+      ]
+    ],
+    "counter": "Black may prefer to resolve the tension first with ...dxc4 in other positions. Both sides should ask who benefits from each recapture and whether an intermediate move changes the order.",
+    "caution": "Do not capture just because it is available. A capture can solve the opponent's development problem or give a rook an open file without creating a meaningful target for you.",
+    "ew": "Kg1 Rc1 Nf3 Pa2 Pb2 Pc4 Pd4 Pe3 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rc8 Nf6 Pa7 Pb7 Pc7 Pd5 Pf7 Pg7 Ph7",
+    "eline": "cxd5 Nxd5",
+    "questions": [
+      "How does removing Black's e-pawn change the recapture?",
+      "Compare the black knight before and after the exchange.",
+      "What must justify cxd5 in this version?"
+    ],
+    "answers": [
+      "There is no e6-pawn to recapture. In the sample line Black recaptures with Nf6. The same white pawn move now leads to a different kind of position.",
+      "The knight becomes centralized on d5. White has removed the d5-pawn, but has helped an enemy piece occupy the center. White cannot describe this simply as creating a weak pawn.",
+      "White needs a concrete benefit: a useful file, a later e4 advance that gains time, or a favorable tactical sequence. Without one, maintaining the tension deserves serious consideration."
+    ],
+    "change": "What if e3-e4 could safely attack the knight on d5 immediately?",
+    "changed_answer": "Then the centralization might be temporary. Calculate the pawn advance and the knight's retreat before deciding whether the exchange helps Black.",
+    "rules": [
+      "Compare capture, advance and maintain.",
+      "Identify every plausible recapturing piece.",
+      "Do not trade useful tension for enemy activity."
+    ],
+    "drill": "For five pawn captures in your games, reconstruct the position one move earlier and explain what keeping the tension would have preserved.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "c4",
+      "d5",
+      "e6"
+    ],
+    "emarks": [],
+    "links": [
+      5,
+      15,
+      17
+    ]
+  },
+  {
+    "n": 7,
+    "title": "Weak squares and outposts",
+    "subtitle": "A strong square needs access, stability and purpose.",
+    "idea": "An outpost is a useful advanced square where a piece can operate without being driven away by an enemy pawn. Pawn support helps, but support alone is not enough. Ask whether you can reach the square, whether pieces can exchange you, and what the occupant will actually attack or restrict.",
+    "white": "Kg1 Rc1 Nf3 Pa2 Pb2 Pc4 Pd4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rc8 Nf6 Pa7 Pb7 Pd6 Pf7 Pg7 Ph7",
+    "line": "Ne5 dxe5 dxe5",
+    "facts": [
+      "d4 supports e5, making the square look attractive.",
+      "But Black's d6-pawn attacks e5.",
+      "A pawn-supported square is not automatically an outpost."
+    ],
+    "steps": [
+      [
+        "Ne5?",
+        "This is the deliberately flawed candidate. The knight lands on a square controlled by a lower-value enemy pawn."
+      ],
+      [
+        "...dxe5",
+        "Black captures it. Strategic language cannot compensate for losing a piece without sufficient return."
+      ],
+      [
+        "dxe5",
+        "White regains the pawn but has traded a knight for a pawn. The square was supported, yet not secure."
+      ]
+    ],
+    "counter": "To establish an outpost, White would first need to remove or deflect the pawn that controls the square, or choose a different destination. Black should preserve useful pawn control when practical.",
+    "caution": "A hole is not necessarily exploitable. If no piece can reach it or the occupant has no useful targets, the square may have little practical value.",
+    "ew": "Kg1 Rc1 Nf3 Pa2 Pb2 Pc4 Pd4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rc8 Nf6 Pa7 Pb7 Pd5 Pf5 Pg7 Ph7",
+    "eline": "Ne5 Kf8",
+    "questions": [
+      "Why is e5 more stable in this version?",
+      "Which white pawn supports the knight?",
+      "Name one useful effect of Ne5 and one remaining limitation."
+    ],
+    "answers": [
+      "Black's d- and f-pawns are already on d5 and f5. They control e4 and cannot retreat to d6 or f6 to challenge e5. This makes e5 a stable outpost against pawn attacks in this structure.",
+      "The pawn on d4 protects e5. If Black exchanges this supporting pawn, the knight's stability must be assessed again. Structural support and the enemy's future pawn breaks belong in the same calculation.",
+      "Ne5 centralizes the knight and gives it access to c6, d7, f7 and g6. It also defends c4. Black can still seek a piece exchange or attack d4 to undermine the support; stable against pawns does not mean impossible to exchange."
+    ],
+    "change": "If Black's f-pawn were still on f7 instead, how would that change e5?",
+    "changed_answer": "Black could consider ...f6 to attack e5. The knight might still be useful there, but its occupation would no longer be secure against pawn challenges.",
+    "rules": [
+      "Check present and future pawn attacks.",
+      "Prove a safe route to the square.",
+      "Name the occupant's useful targets."
+    ],
+    "drill": "Circle three potential outposts in a game. Reject any square that can be challenged by a realistic pawn advance, then explain the value of those remaining.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d6",
+      "e5",
+      "d4"
+    ],
+    "emarks": [],
+    "links": [
+      2,
+      12,
+      19
+    ]
+  },
+  {
+    "n": 8,
+    "title": "Bishops and knights",
+    "subtitle": "Choose the piece that fits the pawn structure.",
+    "idea": "Knights can jump over blocked pawns and use secure central posts. Bishops need open diagonals and can switch between distant targets quickly. A bishop blocked by its own central pawns is often called bad, but it may still perform essential defensive work. Judge the task, not the label.",
+    "white": "Kg1 Bd2 Pa2 Pb2 Pd4 Pe5 Pf2 Pg2 Ph2",
+    "black": "Kg8 Ne7 Pa7 Pb7 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "line": "Bb4 Nc6 Bd6",
+    "facts": [
+      "White's d4/e5 chain occupies dark squares.",
+      "Bd2 is a dark-squared bishop behind that chain.",
+      "The route d2-b4-d6 gets the bishop outside its own pawns."
+    ],
+    "steps": [
+      [
+        "Bb4",
+        "Use the open diagonal to escape the pawn chain. Improving the bishop can be more useful than moving another pawn onto its color."
+      ],
+      [
+        "...Nc6",
+        "Black centralizes and attacks d4. White must still watch the base of the chain while improving the bishop."
+      ],
+      [
+        "Bd6",
+        "The bishop reaches an active square protected by e5. It remains the same color bishop, but its practical activity has changed."
+      ]
+    ],
+    "counter": "Black can pressure d4 or seek a favorable knight route. If the bishop is exchanged, the pawn ending must be evaluated on its own merits; a good minor piece is not a substitute for king activity.",
+    "caution": "Do not exchange a supposedly bad bishop if it is the only defender of critical pawns. In open positions on two wings, a bishop may be superior even when some friendly pawns sit on its color.",
+    "ew": "Kg1 Bc1 Pa2 Pb2 Pd4 Pe5 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Nd7 Pa7 Pb7 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "eline": "Bf4 Nb6",
+    "questions": [
+      "Is White's bishop blocked by the d4/e5 chain in the same way?",
+      "What does Bf4 achieve?",
+      "What should determine whether to keep or exchange this bishop?"
+    ],
+    "answers": [
+      "Bc1 is a dark-squared bishop too, but the diagonal c1-d2-e3-f4 is clear. The central chain does not prevent development along that route. A color label cannot replace checking actual diagonals.",
+      "Bf4 develops outside the chain and controls g5 and h6. Its diagonal toward c7 is still blocked by White's e5-pawn. This is partial improvement, with further activity possible if the center changes.",
+      "Compare its real targets, the knight's possible posts and the pawn ending after an exchange. If central pawns later move or disappear, this bishop's range can change sharply."
+    ],
+    "change": "If White's e5-pawn disappears, what new line does Bf4 acquire?",
+    "changed_answer": "The diagonal f4-e5-d6-c7-b8 opens, provided its other squares are clear. One pawn exchange can turn a limited bishop into a long-range attacker.",
+    "rules": [
+      "Trace actual diagonals and knight routes.",
+      "A bad bishop can be a good defender.",
+      "Evaluate the pawn structure after exchanges."
+    ],
+    "drill": "Take one bishop position and mark all squares it really reaches. Then remove one blocking pawn mentally and compare its new tasks.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d4",
+      "e5",
+      "b4",
+      "d6"
+    ],
+    "emarks": [],
+    "links": [
+      7,
+      9,
+      10
+    ]
+  },
+  {
+    "n": 9,
+    "title": "Bishop pair and color complexes",
+    "subtitle": "Control both colors, then create entry squares.",
+    "idea": "Two bishops can cover both color complexes and cooperate over long distances. Their strength increases when pawn breaks open lines. A color complex is a network of squares of one color that can become hard to defend, especially after its bishop is exchanged. Look for accessible squares, not merely missing bishops.",
+    "white": "Kg1 Bb2 Bg2 Pa2 Pb3 Pc4 Pd3 Pe4 Pf2 Pg3 Ph2",
+    "black": "Kg8 Nc6 Nf6 Pa7 Pb7 Pc7 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "line": "f4 exf4 gxf4",
+    "facts": [
+      "Bb2's long diagonal meets Black's e5-pawn.",
+      "f4 invites that pawn to leave the diagonal.",
+      "Opening a diagonal also changes the white king shelter."
+    ],
+    "steps": [
+      [
+        "f4",
+        "Create contact with e5. The goal is to open lines for bishops, not just gain kingside space."
+      ],
+      [
+        "...exf4",
+        "Black chooses to release the center. This reply is illustrative; Black can also consider keeping the tension."
+      ],
+      [
+        "gxf4",
+        "White gains a mobile pawn on f4 and opens the g-file. Bb2 now directly pressures Nf6. Bg2 remains blocked by White's e4-pawn, so the two bishops have different levels of activity."
+      ]
+    ],
+    "counter": "Black should seek stable knight posts and avoid opening every diagonal without a reason. White must check whether the opened g-file helps the attack or exposes Kg1 to future rook play.",
+    "caution": "The bishop pair is a potential asset, not a fixed extra point of material. If the center remains locked and knights gain secure posts, the bishops may struggle to prove their value.",
+    "ew": "Kg1 Bg2 Pa2 Pb2 Pd4 Pe4 Pf2 Pg3 Ph2",
+    "eb": "Kg8 Bc8 Pa7 Pb7 Pd5 Pe6 Pf7 Pg6 Ph7",
+    "eline": "e5 Kf8",
+    "questions": [
+      "What color squares did Black weaken with ...g6?",
+      "Which white bishop could use those squares?",
+      "Why is e5 useful to examine, and what does it concede?"
+    ],
+    "answers": [
+      "With g7 vacated, dark squares such as f6 and h6 can become more sensitive. Black's light-squared bishop cannot directly defend dark squares, but the king and pawns still matter. A weak color complex does not imply a forced attack.",
+      "Bg2 is a light-squared bishop and cannot directly occupy f6 or h6, which are dark. The exercise tests whether you check square colors rather than automatically aim a fianchettoed bishop at every weakness.",
+      "e5 closes the center and gains space, but places another white pawn on a dark square and leaves Bg2 behind the d5 barrier along its main diagonal. Any plan to exploit dark squares would require king activity later or another piece, not this bishop alone."
+    ],
+    "change": "If White had a dark-squared bishop instead, would the weak squares automatically be exploitable?",
+    "changed_answer": "No. You would still need an entry route and concrete targets. Pawn control, king defense and the time needed to transfer the bishop determine the practical value.",
+    "rules": [
+      "Check the color of the actual squares.",
+      "Open lines only when your pieces benefit.",
+      "A weakness needs an attacker and access."
+    ],
+    "drill": "Mark the color of every central pawn and both bishops in one position. Find one pawn move that improves a bishop and one that restricts it.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "b2",
+      "g2",
+      "e4",
+      "f4"
+    ],
+    "emarks": [],
+    "links": [
+      8,
+      14,
+      21
+    ]
+  },
+  {
+    "n": 10,
+    "title": "Purposeful exchanges",
+    "subtitle": "Judge what remains after the trade.",
+    "idea": "An exchange is good when the remaining position suits you better. It can remove a key defender, reduce an attack, expose a pawn weakness or lead to a favorable ending. Before trading, mentally remove the pieces and place the recapturing piece on its new square. Then evaluate again.",
+    "white": "Kg1 Bd3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Ne4 Pa7 Pb7 Pd5 Pf7 Pg7 Ph7",
+    "line": "Bxe4 dxe4",
+    "facts": [
+      "Ne4 is an active knight supported by d5.",
+      "Bd3 can exchange it, but the recapture changes the pawn structure.",
+      "After the trade, king activity replaces minor-piece activity as the main concern."
+    ],
+    "steps": [
+      [
+        "Bxe4",
+        "Remove the active knight. The decision also gives up a bishop, so judge the resulting position rather than celebrate the removal alone."
+      ],
+      [
+        "...dxe4",
+        "Black's d-pawn becomes an e4-pawn. It gains space but loses pawn support in this version."
+      ],
+      [
+        "Next decision",
+        "Both sides now need active kings. White's d4-pawn is passed, but its king is far away; Black can seek central access and pressure against the kingside."
+      ]
+    ],
+    "counter": "Black may welcome the exchange if the king can become active or if e4 restricts White effectively. White should compare keeping the bishop with entering the pawn ending, including the time needed to support d4.",
+    "caution": "The slogan trade when ahead is incomplete. A rook exchange into a drawn pawn ending throws away a win; a queen exchange that destroys your own king shelter can also be wrong.",
+    "ew": "Kg1 Bd3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Ne4 Pa7 Pb7 Pd5 Pf5 Pg7 Ph7",
+    "eline": "Bxe4 fxe4",
+    "questions": [
+      "What extra recapture does Black have in this version?",
+      "How does ...fxe4 differ from ...dxe4?",
+      "Which ending features must White compare before exchanging?"
+    ],
+    "answers": [
+      "Black can recapture with either the d5-pawn or the f5-pawn. A move that changes the identity of the recapturing pawn can change the entire ending.",
+      "After ...fxe4, the d5-pawn remains and supports e4. White's d4-pawn is blocked by d5, so it is no longer a passed pawn. Black gives up its f-pawn in exchange for a connected central chain.",
+      "Compare king access, the fixed d4/d5 pawns, the supported e4-pawn and the kingside pawn balance. White must assess whether the bishop is more valuable on the board than the pawn ending obtained by removing the knight. No automatic winning verdict follows from the exchange."
+    ],
+    "change": "If Black's king were already on e6, how would the exchange deserve a different evaluation?",
+    "changed_answer": "Black would enter the pawn ending with a much more active king. That can outweigh the attraction of removing Ne4, so White should calculate central entry squares and pawn races before trading.",
+    "rules": [
+      "Name the concrete purpose of a trade.",
+      "Put the recapturing pawn or piece on the board mentally.",
+      "Inspect the resulting ending before exchanging."
+    ],
+    "drill": "For three exchanges in your games, write the intended benefit and the actual position that resulted. Include one exchange you declined.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d3",
+      "e4",
+      "d5"
+    ],
+    "emarks": [],
+    "links": [
+      1,
+      8,
+      24
+    ]
+  },
+  {
+    "n": 11,
+    "title": "Open and semi-open files",
+    "subtitle": "A file matters when it leads somewhere.",
+    "idea": "An open file has no pawns of either side; a semi-open file has no friendly pawn but contains an enemy pawn. Rooks use these files to pressure targets and reach entry squares. Occupying a file is only a first step: ask where the rook can penetrate and whether the opponent can contest it.",
+    "white": "Kg1 Ra1 Nf3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rf8 Nf6 Pa7 Pb7 Pd6 Pf7 Pg7 Ph7",
+    "line": "Rc1 Re8 Rc7",
+    "facts": [
+      "The c-file contains no pawns or pieces.",
+      "c7 is an entry square that Black's current pieces do not control.",
+      "The a1-rook can use the file in two moves."
+    ],
+    "steps": [
+      [
+        "Rc1",
+        "Occupy the file with a destination in mind. The rook is aiming for c7, where it can attack b7 and f7."
+      ],
+      [
+        "...Re8",
+        "Black chooses activity on a different file. This does not stop the c-file invasion; a stronger defense might contest it."
+      ],
+      [
+        "Rc7",
+        "The rook reaches the seventh rank and attacks b7 and f7. Its pressure stops at the first pawn in each direction; it does not attack through f7 to g7."
+      ]
+    ],
+    "counter": "Black should look for ...Rc8 before White enters, or for a tactical response to the invasion. A file may be neutralized if every entry square is controlled even when no enemy rook occupies it.",
+    "caution": "Do not say a rook attacks a pawn just because it is nearby. Trace the exact rank or file and check intervening pieces. An open file without a usable entry square may be only a modest asset.",
+    "ew": "Kg1 Ra1 Nf3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rf8 Nf6 Pa7 Pb7 Pc6 Pd6 Pf7 Pg7 Ph7",
+    "eline": "Rc1 Re8",
+    "questions": [
+      "Is the c-file open or semi-open for White?",
+      "What is the first target of Rc1?",
+      "Why can the rook not simply play Rc7 next?"
+    ],
+    "answers": [
+      "The c-file is semi-open because White has no c-pawn and Black has a pawn on c6. That pawn changes both the target and the rook's route.",
+      "Rc1 pressures c6 along the file. White may add an attacker, fix c6 so it cannot advance safely, or create another weakness while Black defends it.",
+      "The c6-pawn physically blocks the route from c1 to c7. White would have to remove or bypass it first. A file label must be connected to the actual squares a rook can reach."
+    ],
+    "change": "If Black could safely play ...c5, how would the target change?",
+    "changed_answer": "The pawn might stop being a fixed weakness and could challenge d4. White should calculate the advance before committing all pieces to attacking c6.",
+    "rules": [
+      "Name the entry square or pawn target.",
+      "Check every square along the rook's route.",
+      "Contest the file before the enemy enters."
+    ],
+    "drill": "Find an open file in a game. List every possible entry square and the enemy piece that controls each one.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "c1",
+      "c7"
+    ],
+    "emarks": [],
+    "links": [
+      12,
+      13,
+      18
+    ]
+  },
+  {
+    "n": 12,
+    "title": "Rooks on the seventh rank",
+    "subtitle": "Penetration is valuable when it creates real threats.",
+    "idea": "A rook on the seventh rank can attack pawns from the side, restrict the enemy king and cooperate with another rook. The rank itself does not guarantee an advantage. Count accessible targets, checks against your own king and the opponent's ability to exchange or trap the invading rook.",
+    "white": "Kg1 Rc1 Nf3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Re8 Nf6 Pa7 Pb7 Pd6 Pf7 Pg7 Ph7",
+    "line": "Rc7 Rb8 b3",
+    "facts": [
+      "Rc7 attacks b7 along the rank.",
+      "Black can defend the target with ...Rb8.",
+      "The black king cannot cross the seventh rank where the rook's line is clear."
+    ],
+    "steps": [
+      [
+        "Rc7",
+        "Invade with a target. The rook attacks b7, while the pawns on f7 and g7 shield each other from a distant horizontal attack."
+      ],
+      [
+        "...Rb8",
+        "Black defends b7. One weakness can often be held, so White needs another useful improvement."
+      ],
+      [
+        "b3",
+        "White gives b2 a safer square and prepares to improve the king or knight. The invading rook can tie Black down while other pieces work."
+      ]
+    ],
+    "counter": "Black should seek rook activity, exchanges or checks. Passive defense of b7 may be necessary temporarily, but a counterattack against d4 can reduce the pressure.",
+    "caution": "A rook cannot attack through an enemy pawn to every pawn behind it. Count the first obstruction in each direction. Do not sacrifice king safety merely to occupy the seventh rank.",
+    "ew": "Kg1 Rc7 Nf3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rb8 Nf6 Pa7 Pb7 Pd6 Pf7 Pg7 Ph7",
+    "eline": "b3 Ne4",
+    "questions": [
+      "Which black pawn is being attacked and defended?",
+      "What does ...Ne4 tell you about Black's counterplay?",
+      "Should White assume that Rxb7 wins a free pawn?"
+    ],
+    "answers": [
+      "The white rook attacks b7 and Rb8 defends it. The invasion ties the black rook to a task, but it has not yet won anything.",
+      "The knight can become active in the center, attacking f2, d2, c3, c5, d6, f6, g3 and g5. White must compare this activity with its own pressure instead of assuming that the tied rook makes Black helpless.",
+      "No. Rxb7 allows ...Rxb7, exchanging a rook for a pawn unless White has a further concrete tactic. Pressure on a defended pawn and a winning capture are different claims."
+    ],
+    "change": "What if a second white rook joined the seventh rank safely?",
+    "changed_answer": "Two rooks can create lateral threats and mating nets, but the move order still matters. Check whether Black can force an exchange or give perpetual checks before doubling.",
+    "rules": [
+      "Count real targets, not nearby pawns.",
+      "Use the tied defender to improve another piece.",
+      "Check the escape route of the invading rook."
+    ],
+    "drill": "Play five moves from the exercise position. Keep Rc7 active while improving the king or knight; then switch sides and search for checks and central activity.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "c7",
+      "b7",
+      "b8"
+    ],
+    "emarks": [],
+    "links": [
+      11,
+      18,
+      22
+    ]
+  },
+  {
+    "n": 13,
+    "title": "Weak pawns as targets",
+    "subtitle": "Fix the weakness, then build pressure.",
+    "idea": "An isolated pawn lacks friendly pawns on neighboring files. A backward pawn cannot safely advance and trails nearby friendly pawns. Doubled pawns share a file. These structures are not automatically bad: a weakness matters when it can be fixed, reached and attacked at a useful cost.",
+    "white": "Kg1 Ra1 Nf3 Pa2 Pb2 Pe3 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rf8 Nf6 Pa7 Pb7 Pd5 Pf7 Pg7 Ph7",
+    "line": "Rd1 Rd8 Nd4",
+    "facts": [
+      "Black's d5-pawn has no c- or e-pawn neighbor.",
+      "The d-file gives White a direct route to the target.",
+      "Nd4 would stop the pawn advancing to d4."
+    ],
+    "steps": [
+      [
+        "Rd1",
+        "Attack the isolated pawn along its file. The immediate objective is to make Black devote a piece to defense."
+      ],
+      [
+        "...Rd8",
+        "Black protects d5 with a rook. White has created pressure, but one attacker against one defender wins nothing."
+      ],
+      [
+        "Nd4",
+        "Blockade in front of the pawn. The knight is supported by e3 and prevents ...d4 from freeing Black's position."
+      ]
+    ],
+    "counter": "Black should seek active piece play or a timely ...d4 before the blockade is established. If White commits everything to d5, Black may create threats elsewhere and make the attack too slow.",
+    "caution": "Do not attack a pawn that can advance with tempo or be sacrificed for strong activity. A doubled pawn may control valuable squares and open a useful file for its own rook.",
+    "ew": "Kg1 Ra1 Nf3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rf8 Nf6 Pa7 Pb7 Pc6 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "eline": "Rc1 Re8",
+    "questions": [
+      "Which pawn becomes the target after Rc1?",
+      "Can you prove that it is permanently weak?",
+      "What should White check before adding more pressure?"
+    ],
+    "answers": [
+      "Rc1 pressures c6, which is supported by b7. The target is defended, so attacking it once does not win it. White should examine the role of each pawn and piece defender.",
+      "No. Black may prepare ...c5, challenging d4 and changing the target. The label weak is provisional until you examine whether that advance is safe and whether White can keep the pawn fixed.",
+      "Check whether ...c5 can free the pawn and challenge d4. If White can fix c6 safely, pressure may tie Black down. If it cannot be fixed, the rook may need a different task instead of committing more time to a moving target."
+    ],
+    "change": "If Black's b7-pawn disappeared, how would c6 change?",
+    "changed_answer": "It would lose its pawn defender. The c-file pressure would become more concrete, although Black could still defend c6 with a piece or use a timely ...c5 break.",
+    "rules": [
+      "A structural label is not a verdict.",
+      "Check whether the target can move.",
+      "Fix, attack, and watch counterplay."
+    ],
+    "drill": "Find an isolated or doubled pawn in a game. List its benefits as well as its drawbacks before deciding whether to attack it.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d5",
+      "d4",
+      "d1"
+    ],
+    "emarks": [],
+    "links": [
+      11,
+      15,
+      19
+    ]
+  },
+  {
+    "n": 14,
+    "title": "Pawn chains",
+    "subtitle": "Attack the support, and understand the direction.",
+    "idea": "A pawn chain is a diagonal line of mutually connected pawns. Its base is the rear pawn that supports the next link. Attacking the base can undermine the whole chain; attacking the head may open lines more directly. Which method works depends on piece placement and the timing of the break.",
+    "white": "Kg1 Re1 Nf3 Pa2 Pb2 Pc3 Pd4 Pe5 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rc8 Nd7 Pa7 Pb7 Pc7 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "line": "c5 dxc5 Nxc5",
+    "facts": [
+      "c3 supports d4, which supports e5.",
+      "...c5 challenges d4, an important supporting link.",
+      "After dxc5, e5 loses its d-pawn support."
+    ],
+    "steps": [
+      [
+        "...c5",
+        "Challenge the central support. White's c3-pawn still supports d4, so Black must calculate captures rather than assume the base collapses."
+      ],
+      [
+        "dxc5",
+        "White chooses to release the tension and gives up the pawn that supported e5. This is one possible response, not a forced one."
+      ],
+      [
+        "...Nxc5",
+        "The knight gains activity and White's chain is reduced to separate c3 and e5 pawns. Black can now inspect e5 as a target."
+      ]
+    ],
+    "counter": "White can support d4 with pieces and keep the chain intact. White may also seek a kingside break because e5 restricts Black there. The direction of a chain suggests a plan but does not force one.",
+    "caution": "The base is not always the easiest target. If it is well defended and the head can be attacked with tempo, striking the head may be more effective. Calculate the lines opened near both kings.",
+    "ew": "Kg1 Re1 Nf3 Pa2 Pb2 Pc3 Pd4 Pe5 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rf8 Nd7 Pa7 Pb7 Pc7 Pd5 Pe6 Pf7 Pg7 Ph7",
+    "eline": "f6 exf6 Nxf6",
+    "questions": [
+      "What part of White's chain does ...f6 attack?",
+      "What remains of the chain after the sample exchange?",
+      "Compare the files affected by ...c5 and ...f6."
+    ],
+    "answers": [
+      "...f6 attacks e5, the head of the chain. This challenges the space-gaining pawn directly rather than its d4 support.",
+      "After exf6 ...Nxf6, c3 still supports d4, but the advanced e5-pawn has disappeared. Black has gained a useful knight square and reduced White's kingside cramp.",
+      "...c5 tends to change the c- and d-files; ...f6 tends to change the e- and f-files and the king shelter. The correct break depends on which pieces can use those lines and whether opening them is safe."
+    ],
+    "change": "If White had no c3-pawn, what would change about the pressure on d4?",
+    "changed_answer": "d4 would have one fewer pawn defender. Attacking that supporting link could become more effective, especially if a rook or queen also pressures the d-file.",
+    "rules": [
+      "Identify the base, links and head.",
+      "Compare attacking support with attacking space.",
+      "Track the piece activity after each break."
+    ],
+    "drill": "Draw arrows showing pawn support in one of your middlegames. Remove each link mentally and see which pawns lose protection.",
+    "turn": "b",
+    "eturn": "b",
+    "marks": [
+      "c3",
+      "d4",
+      "e5"
+    ],
+    "emarks": [],
+    "links": [
+      3,
+      5,
+      13
+    ]
+  },
+  {
+    "n": 15,
+    "title": "The isolated queen pawn",
+    "subtitle": "Activity now versus a possible target later.",
+    "idea": "An isolated queen pawn, often on d4 or d5, has no friendly c- or e-pawn neighbor. Its owner may gain space, active pieces and open adjacent files. The opponent seeks a blockade, exchanges and pressure. The central advance is a key resource: an isolated pawn is not merely something to defend.",
+    "white": "Kg1 Re1 Nf3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rd8 Nf6 Pa7 Pb7 Pe6 Pf7 Pg7 Ph7",
+    "line": "d5 exd5 Re7",
+    "facts": [
+      "White's d4-pawn is isolated.",
+      "The e-file is semi-open for White against e6.",
+      "d5 can exchange the isolated pawn and clear the e-file."
+    ],
+    "steps": [
+      [
+        "d5",
+        "Offer to transform the structure. Before advancing an isolated pawn, inspect captures and the activity you obtain afterward."
+      ],
+      [
+        "...exd5",
+        "Black captures it. White is now a pawn down, but the e6-pawn no longer blocks the e-file."
+      ],
+      [
+        "Re7",
+        "The rook penetrates and attacks b7 and f7 along a clear seventh rank. This demonstrates activity for a pawn, not a proven winning sacrifice."
+      ]
+    ],
+    "counter": "Black can seek to blockade d5 before White advances, and should consider whether accepting the pawn gives White too much rook activity. White must compare the sacrifice with quieter support of d4.",
+    "caution": "Do not automatically sacrifice the isolated pawn because a file opens. Count concrete threats, Black's defensive resources and whether the activity survives exchanges. This line illustrates the tradeoff without asserting an engine verdict.",
+    "ew": "Kg1 Rd1 Nf3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rd8 Nf6 Pa7 Pb7 Pe6 Pf7 Pg7 Ph7",
+    "eline": "Nd5 Ne5",
+    "questions": [
+      "Where should Black place a blockading knight?",
+      "Why is a knight on d5 difficult to drive away by a white pawn?",
+      "What does White's Ne5 try to preserve?"
+    ],
+    "answers": [
+      "...Nd5 puts a knight directly in front of d4. It blocks the pawn's advance and is supported by e6. Black can later add pressure to d4 rather than rush to capture it.",
+      "White has no c- or e-pawn to attack d5. White may need to exchange the knight with a piece, create kingside activity or change the structure by another means.",
+      "Ne5 uses the isolated pawn's support and keeps pieces active. The knight can create threats around f7 and c6. The owner of the isolated pawn usually needs active tasks, especially before simplifying into an ending."
+    ],
+    "change": "If all minor pieces were exchanged, would the isolated pawn automatically be lost?",
+    "changed_answer": "No. Rook activity, king position and the possibility of advancing or exchanging the pawn still matter. The target is more likely to be relevant, but must actually be attacked.",
+    "rules": [
+      "Owner: seek active pieces and a timely advance.",
+      "Defender: blockade, then increase pressure.",
+      "Evaluate each exchange by its effect on activity."
+    ],
+    "drill": "Play the exercise from each side. Black tries to maintain Nd5; White tries to exchange it or generate a useful threat before further trades.",
+    "turn": "w",
+    "eturn": "b",
+    "marks": [
+      "d4",
+      "d5",
+      "e6"
+    ],
+    "emarks": [],
+    "links": [
+      5,
+      10,
+      19
+    ]
+  },
+  {
+    "n": 16,
+    "title": "Hanging pawns",
+    "subtitle": "A mobile duo can become a fixed target.",
+    "idea": "Hanging pawns are adjacent pawns, commonly on c4 and d4, without friendly pawns on the neighboring outer files. They can control valuable central squares and advance dynamically. If one is forced forward or exchanged, the remaining pawn may become isolated and easier to blockade.",
+    "white": "Kg1 Rd1 Nf3 Pa2 Pc4 Pd4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rd8 Nf6 Pa7 Pb7 Pe6 Pf7 Pg7 Ph7",
+    "line": "d5 exd5 cxd5",
+    "facts": [
+      "White's c4/d4 pair controls b5, c5, d5 and e5.",
+      "There are no white b- or e-pawns to support the duo.",
+      "d5 forces a structural decision and can leave an isolated pawn."
+    ],
+    "steps": [
+      [
+        "d5",
+        "Use the duo's mobility. The advance may gain space or open lines, but it gives up the side-by-side formation."
+      ],
+      [
+        "...exd5",
+        "Black exchanges its e-pawn for the advanced pawn. White must already know which pawn or piece will recapture."
+      ],
+      [
+        "cxd5",
+        "White now has one isolated pawn on d5. Rd1 supports it, but Black's rook attacks it. The old hanging-pawn plan has become an isolated-pawn plan."
+      ]
+    ],
+    "counter": "Black often pressures both pawns and tries to provoke an unfavorable advance. White should coordinate pieces so that a central push creates threats instead of simply presenting a new target.",
+    "caution": "A pawn duo is not weak merely because it lacks neighbors. Its control of central squares can support active pieces. The defender must prevent useful advances before assuming an ending will be favorable.",
+    "ew": "Kg1 Rd1 Nf3 Pa2 Pc4 Pd4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rd8 Nf6 Pa7 Pb7 Pe6 Pf7 Pg7 Ph7",
+    "eline": "c5 Nd5",
+    "questions": [
+      "Which square becomes available to Black after c5?",
+      "How does ...Nd5 affect the remaining d4-pawn?",
+      "What should White have prepared before choosing c5?"
+    ],
+    "answers": [
+      "The d5-square is no longer controlled by a pawn on c4: White's c-pawn has moved to c5 and now controls b6/d6. Black can use the newly available post.",
+      "...Nd5 blockades d4 and is supported by e6. The d4-pawn cannot advance, while c5 and d4 form a chain that may be attacked at its base.",
+      "White needs a concrete benefit such as a queenside target, a piece route or a way to challenge Nd5. Advancing just to gain space can surrender the most important central square."
+    ],
+    "change": "If White could exchange Black's blockading knight immediately, would c5 look different?",
+    "changed_answer": "Yes. The advance is less committal in practice if the main blockader can be removed favorably. You must still evaluate the resulting pawn structure and any new enemy entry square.",
+    "rules": [
+      "Value the duo's mobility and central control.",
+      "Name the square each advance leaves behind.",
+      "Prepare the transformation before committing."
+    ],
+    "drill": "Compare c5, d5 and a waiting move in the exercise. For each, draw the new pawn attacks and identify Black's best blockading square.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "c4",
+      "d4",
+      "d5"
+    ],
+    "emarks": [],
+    "links": [
+      6,
+      15,
+      19
+    ]
+  },
+  {
+    "n": 17,
+    "title": "The minority attack",
+    "subtitle": "Use fewer pawns to create a lasting target.",
+    "idea": "In a Carlsbad-type structure, White's a- and b-pawns can attack Black's a-, b- and c-pawns. The usual goal is to create a weak c-pawn or another queenside target, not to force promotion. The attack must be timed against Black's central or kingside counterplay.",
+    "white": "Kg1 Rc1 Nf3 Pa4 Pb4 Pd4 Pe3 Pf2 Pg2 Ph2",
+    "black": "Kg8 Re8 Nf6 Pa7 Pb7 Pc6 Pd5 Pf7 Pg7 Ph7",
+    "line": "b5 cxb5 axb5",
+    "facts": [
+      "White has two queenside pawns against three.",
+      "b5 makes contact with c6.",
+      "After ...cxb5, the c-file opens for Rc1."
+    ],
+    "steps": [
+      [
+        "b5",
+        "Challenge the queenside chain. White invites a capture that changes targets and files rather than trying to win a pawn by force."
+      ],
+      [
+        "...cxb5",
+        "Black takes the pawn. The old c-pawn is now on b5 and the c-file is clear."
+      ],
+      [
+        "axb5",
+        "White recaptures and opens the c-file. Rc7 may become an invasion idea, while the advanced b5-pawn restrains queenside squares. No pawn sacrifice was needed in this branch."
+      ]
+    ],
+    "counter": "Black can consider ...a6 or counterplay in the center. In fuller Carlsbad positions, piece activity and kingside threats may be faster than White's queenside attack.",
+    "caution": "Do not confuse the pattern with a forced sequence. After b5, Black can choose captures, maintain tension or counterattack. White must compare all replies before committing a pawn.",
+    "ew": "Kg1 Rc1 Nf3 Pa2 Pb4 Pd4 Pe3 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Re8 Nf6 Pa7 Pb7 Pc6 Pd5 Pf7 Pg7 Ph7",
+    "eline": "b5 a6 bxc6 bxc6",
+    "questions": [
+      "What weakness remains after the sample exchanges?",
+      "Why is the c-file useful even though it is not fully open?",
+      "What should White do before adding more attackers?"
+    ],
+    "answers": [
+      "Black has a pawn on c6, originally from b7, with no b-pawn neighbor. The a6-pawn does not directly support c6, and d5 supports c4/e4 rather than c6. The c6-pawn needs piece support or a useful advance.",
+      "White's rook can attack c6 along the semi-open c-file. The goal is to fix and pressure that pawn, not to jump through it to c7.",
+      "Check whether Black can safely play ...c5 and whether central or kingside counterplay is urgent. A second attacker is useful only if the target remains fixed long enough."
+    ],
+    "change": "If Black can achieve ...c5 under favorable conditions, has White's minority attack achieved a permanent target?",
+    "changed_answer": "Not necessarily. The c-pawn may exchange itself or gain activity, removing the weakness. White's success depends on the final structure and piece activity, not just completing b4-b5.",
+    "rules": [
+      "The goal is a target or useful open line.",
+      "Prepare b5 and calculate every recapture.",
+      "Watch the central counterbreak."
+    ],
+    "drill": "Replay both sample branches after b5. List the different targets and rook routes in each resulting position.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "b4",
+      "b5",
+      "c6"
+    ],
+    "emarks": [],
+    "links": [
+      6,
+      11,
+      13
+    ]
+  },
+  {
+    "n": 18,
+    "title": "Pawn majorities and passed pawns",
+    "subtitle": "Create a passer without surrendering control.",
+    "idea": "A pawn majority can create a passed pawn by exchanging opposing pawns. A passed pawn has no enemy pawn ahead of it on its own or an adjacent file. Its value depends on support, the blockade square and king activity. A mobile majority is more useful than a larger but immobilized group.",
+    "white": "Kg1 Ra1 Pa4 Pb3 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rf8 Pa7 Pf7 Pg7 Ph7",
+    "line": "b4 a6 b5 axb5 axb5",
+    "facts": [
+      "White has two queenside pawns against one.",
+      "The a4-pawn can recapture on b5.",
+      "The resulting b-pawn will have no enemy pawn in front of it on the a-, b- or c-file."
+    ],
+    "steps": [
+      [
+        "b4 ...a6",
+        "White prepares to mobilize the majority while Black holds it back. Keep the recapture structure in mind."
+      ],
+      [
+        "b5 ...axb5",
+        "White offers an exchange that removes the only opposing queenside pawn."
+      ],
+      [
+        "axb5",
+        "The a-pawn becomes a passed b-pawn. It still needs support; creating a passer is a strategic milestone, not an automatic win."
+      ]
+    ],
+    "counter": "Black should seek an active rook, checking chances and a blockade in front of the passer. White should coordinate rook and king rather than push the pawn so far that it becomes undefended.",
+    "caution": "Count the race concretely. A distant passer can distract the king, but an enemy king or rook may stop it easily. Rooks often work well behind passed pawns, yet checking geometry can justify another placement.",
+    "ew": "Kg2 Rb1 Pb5 Pf2 Pg3 Ph2",
+    "eb": "Kg7 Rb8 Pf7 Pg6 Ph7",
+    "eline": "Kf3 Kf6 Ke4",
+    "questions": [
+      "Why is b5 a passed pawn?",
+      "Why is b6 not the only plan to consider?",
+      "What does the king maneuver add?"
+    ],
+    "answers": [
+      "Black has no a-, b- or c-pawn ahead of b5. The rook on b8 can block or attack it, but pieces do not change the definition of a passed pawn.",
+      "Pushing may shorten the distance to promotion but can also make the pawn easier to blockade. White should compare improving the king, activating the rook and advancing only when support is adequate.",
+      "Kf3 and Ke4 bring the king toward the center. From there it can support further progress or switch toward the kingside. The sample is a planning illustration; Black will also seek active rook checks."
+    ],
+    "change": "If Black had a pawn on c7, would the b5-pawn still be passed?",
+    "changed_answer": "No. An enemy c7-pawn is ahead on an adjacent file and can influence the b-pawn's route. It must be removed or bypassed before calling b5 a passer.",
+    "rules": [
+      "Verify the passed-pawn definition.",
+      "Mobilize the majority with supported exchanges.",
+      "Coordinate before pushing beyond protection."
+    ],
+    "drill": "Set up the exercise. Try advancing immediately, then try centralizing the king first. Compare how easily the defending rook creates checks.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "a4",
+      "b3",
+      "a7"
+    ],
+    "emarks": [],
+    "links": [
+      19,
+      22,
+      24
+    ]
+  },
+  {
+    "n": 19,
+    "title": "Restraint and blockade",
+    "subtitle": "Stop the freeing move before attacking the pawn.",
+    "idea": "Restraint limits a pawn's useful advances. A blockade places a piece directly in front of it. Knights are often effective blockaders because they can operate while staying on the square, but any piece may serve. First secure the blockade, then improve attackers and watch for a break that removes your support.",
+    "white": "Kg1 Rd1 Nf3 Pa2 Pb2 Pe3 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rd8 Nf6 Pa7 Pb7 Pd5 Pf7 Pg7 Ph7",
+    "line": "Nd4 Ne4 f3",
+    "facts": [
+      "d4 is the square directly in front of Black's d5-pawn.",
+      "The e3-pawn supports a knight on d4.",
+      "Black has no c- or e-pawn to chase that knight."
+    ],
+    "steps": [
+      [
+        "Nd4",
+        "Stop ...d4 and install a supported blockader. The knight can also influence c6, e6, b5 and f5."
+      ],
+      [
+        "...Ne4",
+        "Black seeks an active post rather than passively waiting. The d5-pawn supports the knight on e4."
+      ],
+      [
+        "f3",
+        "Challenge the active knight. White must check king safety before moving this pawn in positions with queens or more attacking pieces."
+      ]
+    ],
+    "counter": "Black can exchange the blockader with a piece, attack e3, or create counterplay away from d5. White should keep the blockading piece useful and avoid tying down the entire army to one pawn.",
+    "caution": "A blockade that leaves the blockader helpless elsewhere may be too expensive. Also, placing a piece in front of a pawn does not stop an adjacent pawn from capturing or undermining it.",
+    "ew": "Kg1 Rd1 Nf3 Pa2 Pb2 Pe3 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rd8 Nf6 Pa7 Pb7 Pc6 Pd5 Pf7 Pg7 Ph7",
+    "eline": "Nd4 c5",
+    "questions": [
+      "What extra resource does Black have in this version?",
+      "Why does Nd4 no longer establish a stable blockade?",
+      "What must White decide after ...c5?"
+    ],
+    "answers": [
+      "The c6-pawn can advance to c5 and attack d4. Unlike the isolated-pawn model, Black has a neighboring pawn that can challenge the blockader.",
+      "Nd4 is still legal and supported by e3, but ...c5 attacks it with a pawn. Pawn support does not make a knight safe to leave under a pawn attack.",
+      "White must find a safe knight move, exchange it favorably or calculate a tactical response. The plan should now focus on the changed pawn structure, not on pretending that d5 remains permanently fixed."
+    ],
+    "change": "What if White could prevent ...c5 without creating another serious weakness?",
+    "changed_answer": "Then d4 might again become a durable blockading square. Restraint often has to come before occupation: stop the enemy's challenging pawn before installing the piece.",
+    "rules": [
+      "Check neighboring pawns before blockading.",
+      "Support the blockader and give it active tasks.",
+      "Watch for attacks on its supporting pawn."
+    ],
+    "drill": "List every way the defender can remove the knight in the model: pawn challenge, piece exchange, attack on support, or counterplay elsewhere.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d5",
+      "d4",
+      "e3"
+    ],
+    "emarks": [],
+    "links": [
+      7,
+      13,
+      15
+    ]
+  },
+  {
+    "n": 20,
+    "title": "Prophylaxis and counterplay",
+    "subtitle": "Understand the opponent's useful move.",
+    "idea": "Prophylaxis means anticipating and limiting the opponent's plans. Ask what they would like to do if given a free move, then look for a move that improves your position while reducing that option. Prevention should have a specific target and should not cost more than the threat it stops.",
+    "white": "Kg1 Rc1 Nf3 Pa2 Pb2 Pc4 Pd5 Pe4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rf8 Nd7 Pa7 Pb7 Pc7 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "line": "g3 f5 exf5",
+    "facts": [
+      "Black wants the freeing break ...f5 against e4.",
+      "g3 gives the king air but does not stop ...f5.",
+      "A move can look careful while failing to address the real plan."
+    ],
+    "steps": [
+      [
+        "g3?",
+        "This is a strategically unfocused candidate, not an asserted losing move. It changes the shelter without preventing Black's central break."
+      ],
+      [
+        "...f5",
+        "Black gets the intended contact with e4. White now has to calculate central changes."
+      ],
+      [
+        "exf5",
+        "White can capture, but the center has been transformed on Black's terms. Black may answer with the rook from f8, gaining activity."
+      ]
+    ],
+    "counter": "White should compare moves that restrain ...f5, prepare a favorable response to it, or create a stronger threat. Prevention is only one method; sometimes allowing the break and exploiting its cost is better.",
+    "caution": "Do not make a weakening pawn move merely because it stops one idea. Check whether the opponent can switch plans and attack the new weakness. Prophylaxis is active reasoning, not habitual caution.",
+    "ew": "Kg1 Rc1 Nf3 Pa2 Pb2 Pc4 Pd5 Pe4 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rf8 Nd7 Pa7 Pb7 Pc7 Pd6 Pe5 Pf7 Pg7 Ph7",
+    "eline": "g4 h6",
+    "questions": [
+      "Which black advance does g4 discourage?",
+      "What structural price does White pay?",
+      "What should Black investigate instead of insisting on ...f5?"
+    ],
+    "answers": [
+      "The pawn on g4 controls f5. If Black plays ...f5, White can consider gxf5. That makes the freeing move less convenient, but concrete tactics can still matter.",
+      "White has advanced a king-shelter pawn and weakened squares such as f3 and h3. With queens on the board the price might be much greater. g4 is a candidate demonstrating a tradeoff, not a universal recommendation.",
+      "Black can consider ...c6 against d5, ...h5 against g4, or piece activity. Good prophylaxis anticipates a plan switch; stopping one break does not freeze the opponent."
+    ],
+    "change": "If allowing ...f5 gave you a forced tactical win, would you prevent it?",
+    "changed_answer": "No. Let the opponent make the unfavorable break. The purpose is to improve your practical position, not to stop every move the opponent wants to play.",
+    "rules": [
+      "Name the opponent's intended move.",
+      "Prefer prevention that also improves a piece.",
+      "Recheck the cost and the alternative plan."
+    ],
+    "drill": "Before each move in a slow practice game, write the opponent's most useful next move. Compare your prediction with what actually happens.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "f7",
+      "f5",
+      "e4"
+    ],
+    "emarks": [],
+    "links": [
+      4,
+      5,
+      21
+    ]
+  },
+  {
+    "n": 21,
+    "title": "King safety and pawn cover",
+    "subtitle": "A shelter is valuable only with defenders and time.",
+    "idea": "King safety depends on pawn cover, open lines, nearby defenders and the number of attackers that can arrive. A pawn move may create an escape square or stop a piece, but it also leaves squares behind. Judge the whole position before trading cover for activity or launching a pawn storm.",
+    "white": "Kg1 Rf1 Nf3 Pa2 Pb2 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rf8 Nf6 Pa7 Pb7 Pf7 Pg7 Ph7",
+    "line": "h3 h6",
+    "facts": [
+      "Both kings have three shelter pawns.",
+      "h3 creates h2 as a potential escape square.",
+      "No queens or bishops are present, so diagonal weaknesses are less immediately dangerous."
+    ],
+    "steps": [
+      [
+        "h3",
+        "Create room and control g4. The move has identifiable benefits, but it also spends a tempo."
+      ],
+      [
+        "...h6",
+        "Black makes the same kind of move. Symmetry does not prove that either move was the most urgent one."
+      ],
+      [
+        "Reassess",
+        "In this reduced position centralizing the king may soon matter more than preserving a full middlegame shelter."
+      ]
+    ],
+    "counter": "The opponent should look for checks and access to newly weakened squares. In a fuller position, a bishop sacrifice or an opened file can radically change the safety of the same pawn formation.",
+    "caution": "An escape square must be safe from enemy control. Moving h2-h3 does not solve a back-rank problem if an enemy bishop or rook controls h2. Check the square, not just the empty space.",
+    "ew": "Kg1 Rf1 Nf3 Pa2 Pb2 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rf8 Bb8 Pa7 Pb7 Pf7 Pg7 Ph7",
+    "eline": "h3 Re8",
+    "questions": [
+      "Does h3 create a safe escape square on h2 here?",
+      "Trace the black bishop's diagonal.",
+      "What should White consider before relying on a back-rank defense?"
+    ],
+    "answers": [
+      "No. h2 becomes empty, but it is controlled by the bishop on b8. The white king cannot legally move into that attack.",
+      "The diagonal is b8-c7-d6-e5-f4-g3-h2. All intermediate squares are clear. This is why counting empty adjacent squares is insufficient.",
+      "White must remove or block the bishop's control, create a different safe square, or prevent a rook invasion by active defense. The exact move depends on threats and available tempi."
+    ],
+    "change": "If White had a pawn on g3, would the same bishop still control h2?",
+    "changed_answer": "No. The pawn on g3 blocks the diagonal and is itself attacked. That may change the escape-square calculation, but the pawn's safety must then be checked.",
+    "rules": [
+      "Count attackers, defenders and open lines.",
+      "Verify that every escape square is safe.",
+      "A pawn storm also changes your own shelter."
+    ],
+    "drill": "In three castled positions, mark every legal king escape square and the enemy line that would remove it.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "g1",
+      "h2",
+      "h3"
+    ],
+    "emarks": [],
+    "links": [
+      1,
+      9,
+      20
+    ]
+  },
+  {
+    "n": 22,
+    "title": "The principle of two weaknesses",
+    "subtitle": "Make the defense stretch across the board.",
+    "idea": "One weakness can often be defended without difficulty. Keep pressure on it while creating a second target far enough away that the same defenders cannot cover both efficiently. The stronger side needs safe routes for switching play; the defender seeks activity, exchanges or a way to eliminate one target.",
+    "white": "Kg2 Rc5 Nf3 Pa2 Pb2 Pf2 Pg3 Ph2",
+    "black": "Kg8 Rd8 Nf6 Pa7 Pb7 Pd5 Pf7 Pg7 Ph7",
+    "line": "h4 h6 h5",
+    "facts": [
+      "Rc5 attacks d5, defended by Rd8.",
+      "White can expand on the kingside while keeping the rook active.",
+      "A second target would make the defense less comfortable."
+    ],
+    "steps": [
+      [
+        "h4",
+        "Prepare a kingside contact without abandoning pressure on d5. The first target keeps a black piece occupied."
+      ],
+      [
+        "...h6",
+        "Black fixes a pawn on a square that can be challenged. This is illustrative; Black should also consider active counterplay."
+      ],
+      [
+        "h5",
+        "White gains space and controls g6. A later g4-g5 may create contact, but that break still needs preparation and calculation."
+      ]
+    ],
+    "counter": "Black should avoid waiting for a second weakness to become fixed. Useful ideas include ...d4 if possible, active rook checks, a knight exchange or counterplay against White's queenside pawns.",
+    "caution": "Two weaknesses do not guarantee a win if your pieces cannot switch between them or your own king is exposed. Keep the position under control; creating a second front must not lose the first.",
+    "ew": "Kg2 Rc5 Nf3 Pa2 Pb2 Pf2 Pg3 Ph5",
+    "eb": "Kg8 Rd8 Nf6 Pa7 Pb7 Pd5 Pf7 Pg7 Ph6",
+    "eline": "g4 Ne4",
+    "questions": [
+      "What is White preparing with g4?",
+      "Which squares and pawns does the move stop defending?",
+      "Why is ...Ne4 a useful reminder for the attacker?"
+    ],
+    "answers": [
+      "White prepares g5 to make contact with h6 or f6. The aim is to create a second target while Rc5 continues to pressure d5.",
+      "The g3-pawn no longer controls f4 and h4; g4 instead controls f5 and h5. King cover also changes. White must inspect these square changes before calling the pawn move an improvement.",
+      "Black uses the time to centralize the knight, supported by d5. It can attack f2 and create counterplay. White must calculate such activity while building the second front."
+    ],
+    "change": "If ...d4 safely removed the original weakness, how would your plan change?",
+    "changed_answer": "Reevaluate immediately. You may no longer be stretching the defender between two targets, so the kingside expansion must be justified on its own.",
+    "rules": [
+      "Keep pressure on the first target.",
+      "Create the second where you can switch quickly.",
+      "Do not let the defender free the first weakness."
+    ],
+    "drill": "Choose a position where one pawn is securely defended. Find a second target and count the tempi each side needs to transfer its pieces.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d5",
+      "h6",
+      "h5"
+    ],
+    "emarks": [],
+    "links": [
+      13,
+      18,
+      24
+    ]
+  },
+  {
+    "n": 23,
+    "title": "Static and dynamic compensation",
+    "subtitle": "Make the price of activity explicit.",
+    "idea": "Static features tend to persist: material, pawn weaknesses and enduring squares. Dynamic features depend more on time: development, initiative, exposed kings and temporary activity. A positional sacrifice trades material for lasting or sufficiently strong practical assets. Name those assets and calculate how the opponent can reduce them.",
+    "white": "Kg1 Re1 Nf3 Pa2 Pb2 Pd4 Pf2 Pg2 Ph2",
+    "black": "Kg8 Rd8 Nf6 Pa7 Pb7 Pe6 Pf7 Pg7 Ph7",
+    "line": "d5 exd5 Re7",
+    "facts": [
+      "White can offer the isolated d-pawn to open the e-file.",
+      "After ...exd5, White is a pawn down.",
+      "Re7 creates active pressure on b7 and f7, but no forced win is claimed."
+    ],
+    "steps": [
+      [
+        "d5",
+        "State the investment: one pawn. State the expected return: an open file and a rook on the seventh rank."
+      ],
+      [
+        "...exd5",
+        "Assume the opponent accepts and defends accurately. A sacrifice must be judged against resistance, not a cooperative continuation."
+      ],
+      [
+        "Re7",
+        "The compensation is concrete activity. Ask whether it can win a pawn back, force a concession or remain useful after exchanges."
+      ]
+    ],
+    "counter": "Black should seek safe exchanges, defend accessible targets and activate its own rook. If the activity disappears while the extra pawn remains, the long-term balance has shifted against the sacrificer.",
+    "caution": "Do not call compensation sufficient merely because the pieces look active. This lesson teaches how to audit a sacrifice; the sample line is illustrative and is not an engine-certified recommendation.",
+    "ew": "Kg1 Rc1 Nf3 Pa2 Pb2 Pf2 Pg2 Ph2",
+    "eb": "Kg8 Rf8 Nc6 Pa7 Pb7 Pd6 Pf7 Pg7 Ph7",
+    "eline": "Rxc6 bxc6",
+    "questions": [
+      "What material has White invested after Rxc6 bxc6?",
+      "What lasting structural change did White obtain?",
+      "Is that fact alone enough to justify the sacrifice?"
+    ],
+    "answers": [
+      "White gave a rook for a knight. Using the usual rough values, this costs about two points of material. The exact value depends on the remaining position, but the exchange deficit is real.",
+      "Black's b-pawn moved to c6, creating a potential target and changing its control of squares. Black also gained a semi-open b-file for a rook. Structural damage can bring compensating benefits to its owner.",
+      "No. White has no rook left to attack c6 along a file, and the remaining knight needs useful entry squares. Without additional threats, king exposure or dominant squares, damaging a pawn structure is not enough by itself."
+    ],
+    "change": "What extra evidence would make an exchange sacrifice more convincing?",
+    "changed_answer": "A secure and dominant minor piece, a dangerous passed pawn, a sustained king attack, or a concrete sequence recovering material. You must also show how these assets survive the defender's best simplifying attempts.",
+    "rules": [
+      "State the exact material cost.",
+      "List durable assets and temporary threats separately.",
+      "Test the defender's exchanges and counterplay."
+    ],
+    "drill": "For one sacrifice in a game, make two columns: assets that survive a queen trade and assets that disappear. Then calculate the strongest defensive exchange.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "d4",
+      "e6",
+      "e7"
+    ],
+    "emarks": [],
+    "links": [
+      10,
+      15,
+      24
+    ]
+  },
+  {
+    "n": 24,
+    "title": "Convert an advantage",
+    "subtitle": "Improve, restrict counterplay, and choose the right ending.",
+    "idea": "Conversion means turning an advantage into a concrete result. Improve the least active piece, reduce the opponent's useful counterplay and choose exchanges that preserve winning resources. In endings, active kings, passed pawns and rook activity may matter more than a visually attractive pawn structure.",
+    "white": "Ke3 Pd4 Pf3 Pg3 Ph3",
+    "black": "Ke6 Pf6 Pg6 Ph6",
+    "line": "Ke4 f5+ Kf4",
+    "facts": [
+      "White has an extra central passed pawn on d4.",
+      "The kings must respect opposition and pawn attacks.",
+      "White should coordinate the king before advancing the passer."
+    ],
+    "steps": [
+      [
+        "Ke4",
+        "Centralize while keeping contact with the passer. The move approaches useful squares without pushing the pawn beyond support."
+      ],
+      [
+        "...f5+",
+        "Black creates a forcing reply. The defender should seek active resources rather than simply retreating."
+      ],
+      [
+        "Kf4",
+        "Step to a legal active square and keep the pawn position under control. The line illustrates technique, not a complete proof of the ending's result."
+      ]
+    ],
+    "counter": "Black can attack the pawn chain, use opposition and seek exchanges that leave too few winning resources. White must calculate pawn races and king access instead of assuming that an extra pawn wins itself.",
+    "caution": "Before exchanging the last pieces, calculate the pawn ending. A general material advantage does not override a drawn king-and-pawn position. Do not rush a passed pawn if the king needs to lead it.",
+    "ew": "Ke4 Pe3",
+    "eb": "Ke6",
+    "eline": "Kd4 Kd6 e4 Ke6",
+    "questions": [
+      "What does Black achieve by keeping the kings opposed?",
+      "Why does a pawn move alter the opposition?",
+      "Does the sample line prove that White wins?"
+    ],
+    "answers": [
+      "Black keeps the white king from simply walking forward. After Kd4 ...Kd6, the kings face each other with one square between them and White to move. Black has the direct opposition.",
+      "e4 uses a pawn tempo and changes the geometry, but Black can answer ...Ke6 and continue guarding entry squares. Opposition is a tool for controlling king access, not a rule that every opposition gain wins.",
+      "No. This starting king-and-pawn position is drawn with correct defense. The sample shows how the defender maintains access control; it is a warning to verify the ending before trading into it. White's king has not secured a key square on d5, e5 or f5."
+    ],
+    "change": "For a white pawn still on e3, which king squares would guarantee promotion against a lone king if reached legally?",
+    "changed_answer": "The key squares are d5, e5 and f5. Reaching one with the king secures the usual non-rook-pawn winning method; merely standing on e4 does not.",
+    "rules": [
+      "Reduce useful counterplay, not just material.",
+      "Activate the king when it is safe.",
+      "Verify the final pawn ending before exchanging."
+    ],
+    "drill": "Play the final exercise from both sides. The defender practices opposition; the attacker tries to reach d5, e5 or f5 without losing the pawn.",
+    "turn": "w",
+    "eturn": "w",
+    "marks": [
+      "e3",
+      "e4",
+      "d4"
+    ],
+    "emarks": [],
+    "links": [
+      1,
+      18,
+      22
+    ]
+  }
+]
