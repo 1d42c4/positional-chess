@@ -15,10 +15,10 @@ These protections do **not** prevent a personal-account owner or repository admi
 
 ## Restore from the independent Git bundle
 
-The local `positional-chess-v1.0.0.bundle` contains the complete initial repository history and release tag. To restore it into a new directory:
+The local `positional-chess-preserved.bundle` contains the complete repository history and protected release tags. To restore it into a new directory:
 
 ```sh
-git clone positional-chess-v1.0.0.bundle positional-chess-restored
+git clone positional-chess-preserved.bundle positional-chess-restored
 ```
 
 If restoration to GitHub is needed, create or select the intended repository, configure its remote, push the restored branches and tags, enable Pages from `main` at `/`, and recreate the protection rules. Check `SHA256SUMS.txt` before publishing restored PDF files. A Git bundle does not itself contain hosted repository settings or protection rules; their JSON exports accompany the local backup.
