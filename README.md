@@ -2,7 +2,7 @@
 
 **24 illustrated topic lessons + a study guide · 25 PDFs · 100 pages**
 
-**[Read the collection on GitHub Pages](https://knightway8.github.io/positional-chess/)** · [Download all PDFs](downloads/positional-chess-pdfs.zip) · [Start with the study guide](pdfs/00_Start_Here.pdf)
+**[Read the collection on GitHub Pages](https://1d42c4.github.io/positional-chess/)** · [Download all PDFs](downloads/positional-chess-pdfs.zip) · [Start with the study guide](pdfs/00_Start_Here.pdf)
 
 Every four-page lesson contains a positional concept, worked diagrams, reasoning for both sides, a practice position, explained answers, a changed-position question, and a drill for your own games. The olive-and-cream boards use dark Cburnett vector pieces.
 
